@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPELLCAM</title>
+    <script type="module" crossorigin src="./assets/index-BattP9-G.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CIGcvNCP.css">
+  </head>
+  <body>
+    <div id="stage">
+      <video id="cam" playsinline muted></video>
+      <div id="game"></div>
+      <canvas id="debug"></canvas>
+      <div id="gate">
+        <h1>SPELLCAM</h1>
+        <p class="tag">You're a stick figure. The paper monsters want you. Draw them away.</p>
+        <button id="enable">Enable camera &amp; sound</button>
+        <label id="camPick" hidden>Camera <select id="camSelect"></select></label>
+        <p id="gateMsg"></p>
+      </div>
+    </div>
+    <div id="lobby" hidden role="dialog" aria-modal="true" aria-labelledby="lobbyTitle">
+      <header id="lobbyHead">
+        <h2 id="lobbyTitle">Browse games</h2>
+        <button id="lobbyClose" class="secondary icon" aria-label="Close">✕</button>
+      </header>
+      <p id="lobbyStatus"></p>
+      <div id="lobbyMenu">
+        <div id="lobbyBrowse">
+          <label id="lobbyNameRow"><span>Your name</span><input id="lobbyName" maxlength="16" autocomplete="off" spellcheck="false" /></label>
+          <button id="lobbyQuick">Quick match</button>
+        </div>
+        <section id="lobbyRooms">
+          <div id="lobbyRoomsHead">
+            <h3>Open games <span id="lobbyRoomCount"></span></h3>
+            <button id="lobbyRefresh" class="secondary small">Refresh</button>
+          </div>
+          <ul id="lobbyRoomList"></ul>
+        </section>
+        <div id="lobbyCodeRow">
+          <label for="lobbyCode">Have a code?</label>
+          <input id="lobbyCode" maxlength="4" placeholder="CODE" autocomplete="off" spellcheck="false" aria-label="Friend's four-letter join code" />
+          <button id="lobbyJoin">Join</button>
+        </div>
+      </div>
+      <div id="lobbyFoot">
+        <button id="lobbyLeave" class="secondary">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
