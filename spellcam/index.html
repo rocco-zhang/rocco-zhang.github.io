@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SPELLCAM</title>
-    <script type="module" crossorigin src="./assets/index-BattP9-G.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CIGcvNCP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>SPELLCAM</title>
+    <link rel="icon" href="data:," />
+    <script type="module" crossorigin src="./assets/index-Bh4Wl0l5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BQZuHyMg.css">
   </head>
   <body>
     <div id="stage">
@@ -15,9 +16,9 @@
       <div id="gate">
         <h1>SPELLCAM</h1>
         <p class="tag">You're a stick figure. The paper monsters want you. Draw them away.</p>
-        <button id="enable">Enable camera &amp; sound</button>
+        <button id="enable" disabled>Enable camera &amp; sound</button>
         <label id="camPick" hidden>Camera <select id="camSelect"></select></label>
-        <p id="gateMsg"></p>
+        <p id="gateMsg" role="status">Loading game…</p>
       </div>
     </div>
     <div id="lobby" hidden role="dialog" aria-modal="true" aria-labelledby="lobbyTitle">
