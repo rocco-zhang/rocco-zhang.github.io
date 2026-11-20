@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Same geometry, colors, and angle as the drawing cursor's pencil. -->
+  <g transform="translate(32 32) rotate(210) scale(1.4) translate(0 16)">
+    <path fill="#f4c531" d="M-4-26H4V-2H-4Z"/>
+    <path fill="#f08a9b" d="M-4-2H4V4H-4Z"/>
+    <path fill="#e9d3a6" d="M-4-26 0-36 4-26Z"/>
+    <path fill="none" stroke="#33312e" stroke-width="1.8" stroke-linejoin="round" d="M-4 4V-26L0-36 4-26V4Z"/>
+    <circle cx="0" cy="-34.5" r="1.6" fill="#33312e"/>
+  </g>
+</svg>
